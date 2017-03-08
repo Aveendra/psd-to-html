@@ -1,7 +1,10 @@
 # Converting PSD to HTML
 
+
 # Getting started
+
 Please follow the steps.
-1. `npm install`
-2. `bower install`
-3. 'gulp'
+
+1. Run `npm install`
+2. Run `bower install`
+3. Run `gulp`
