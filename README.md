@@ -9,3 +9,10 @@ Please follow the steps.
 2. Run `npm install`
 3. Run `bower install`
 4. Run `gulp`
+
+# Stack
+
+* HTML 
+* SASS
+* Gulp
+* Bower
