@@ -16,7 +16,7 @@ $slider-height : 623px;
 	}
 
 	@media screen and (max-width: 375px) {
-		height: 300px;
+		height: 500px;
 	}
 }
 
@@ -72,9 +72,21 @@ $slider-inner-height : 100%;
 					position: absolute;
 					height: inherit;
 					width: 60%;
+					@media screen and (max-width: 680px) {
+						width: 100%;
+						left: 0;
+						right: 0;
+						padding: 0 15px;
+					}
 					.content{
 						@extend %vertical-center;
 						position: absolute;
+						left: 0;
+						right: 0;
+
+						@media screen and (max-width: 680px) {
+							padding: 0 15px;
+						}
 					}
 					.title{
 						@extend %left-wide;
@@ -93,10 +105,17 @@ $slider-inner-height : 100%;
 							font-size: 54px;
 						}
 
-						@media screen and (max-width: 1024px) {
+						@media screen and (max-width: 1190px) {
 							font-size: 50px;
 							.lite{
 								font-size: 50px;
+							}
+						}
+
+						@media screen and (max-width: 680px) {
+							font-size: 40px;
+							.lite{
+								font-size: 40px;
 							}
 						}
 
@@ -106,12 +125,30 @@ $slider-inner-height : 100%;
 								font-size: 30px;
 							}
 						}
+
+						@media screen and (max-width: 375px) {
+							font-size: 25px;
+							.lite{
+								font-size: 25px;
+							}
+						}
+
+						@media screen and (max-width: 320px) {
+							font-size: 22px;
+							.lite{
+								font-size: 22px;
+							}
+						}
 					}
 					p{
 						@extend %left-wide;
 						margin-bottom: 40px;
 						font-size: 17px;
 						width: 60%;
+
+						@media screen and (max-width: 375px) {
+							width: 100%;
+						}
 					}
 					.btn{
 						font-weight: 900;

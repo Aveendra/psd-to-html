@@ -13,6 +13,14 @@ footer{
 	color: $white;
 	padding: 150px 0 80px;
 
+	@media screen and (max-width: 490px) {
+		padding: 200px 0 80px;
+	}
+
+	@media screen and (max-width: 470px) {
+		padding: 300px 0 80px;
+	}
+
 	p{
 		margin: 0;
 	}
@@ -25,6 +33,14 @@ footer{
 
 	.widget{
 		float: left;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
 
 		.widget-title{
 			@extend %left-wide;
@@ -82,6 +98,7 @@ footer{
 				li{
 					display: inline-block;
 					margin: 0 4px 10px;
+					max-width: 43%;
 					a{
 						img{}
 					}

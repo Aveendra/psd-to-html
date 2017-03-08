@@ -7,6 +7,14 @@
 .thumbnail-block{
 	text-align: center;
 
+	@media screen and (max-width: 767px) {
+		margin-bottom: 30px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
 	.title{
 		font-weight: 900;
 		font-size: 26px;

@@ -206,6 +206,14 @@ hr {
   text-transform: uppercase;
   margin: 0 0 60px;
   text-align: center;
+  
+  @media screen and (max-width: 560px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 420px) {
+    font-size: 26px;
+  }
 }
 
 .section-description{

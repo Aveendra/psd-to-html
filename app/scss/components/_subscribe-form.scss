@@ -13,6 +13,18 @@
 	}
 	padding: 30px;
 
+	@media screen and (max-width: 490px) {
+		margin-top: -250px;
+	}
+
+	@media screen and (max-width: 470px) {
+		margin-top: -350px;
+	}
+
+	@media screen and (max-width: 320px) {
+		padding: 30px 15px;
+	}
+
 	.contact-number{
 		float: left;
 		.icon{
@@ -45,6 +57,10 @@
 
 	.subscribe-form{
 		float: right;
+		@media screen and (max-width: 980px) {
+			width: 100%;
+			margin-top: 30px;
+		}
 		.input{
 			float: left;
 			position: relative;
@@ -68,8 +84,30 @@
 				min-width: 250px;
 			}
 
+			@media screen and (max-width: 980px) {
+				min-width: initial;
+				width: 70%;
+				margin-right: 3%;
+			}
+
 			@media screen and (max-width: 480px) {
 				margin-bottom: 10px;
+			}
+
+			@media screen and (max-width: 470px) {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+
+		.btn{
+			@media screen and (max-width: 980px) {
+				width: 27%;
+				min-width: auto;
+			}
+
+			@media screen and (max-width: 470px) {
+				width: 100%;
 			}
 		}
 	}
