@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*====================================
+=            Causes Block            =
+====================================*/
+
+.cause-block{
+	@extend %left-wide;
+	text-align: center;
+
+	.img{
+		@extend %left-wide;
+		position: relative;
+		height: 250px;
+		background: {
+			size: cover;
+			position: center;
+			repeat: no-repeat;
+			color: $gray;
+		}
+		.cause-progress{
+			padding: 15px;
+			background: $white;
+			position: absolute;
+			bottom: -20px;
+			left: 30px;
+			right: 30px;
+			@include border-radius(50px);
+
+			span{
+				float: left;
+				line-height: 1;
+
+				&.progress-line{
+					position: relative;
+					height: 10px;
+    				width: 88%;
+    				@include border-radius(30px);
+    				overflow: hidden;
+    				background: #d4d4d4;
+					i{
+						float: left;
+						height: inherit;
+						background: $red;
+					}
+				}
+
+				&.count{
+					float: right;
+					width: 10%;
+					font-size: 14px;
+					line-height: 1;
+					margin-top: -2px;
+				}
+			}
+		}
+	}
+
+	.content{
+		@extend %left-wide;
+		background: {
+			image: url(../images/pattern.png);
+			color: $red;
+		}
+		color: $white;
+		padding: 50px 30px 30px;
+		font-weight: 700;
+	}
+
+	.goal-raised{
+		@extend %left-wide;
+		font-size: 15px;
+		margin-bottom: 10px;
+		span{
+			&.raised{
+				float: left;
+			}
+			&.goal{
+				float: right;
+				text-align: right;
+			}
+		}
+	}
+
+	.title{
+		@extend %left-wide;
+		font-size: 20px;
+		padding: 0 35px;
+		line-height: 1.3;
+		margin-bottom: 20px;
+	}
+
+	@media screen and (max-width: 480px) {
+		margin-bottom: 15px;
+	}
+}
+
+/*=====  End of Causes Block  ======*/

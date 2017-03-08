@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/*==============================
+=            Footer            =
+==============================*/
+
+footer{
+	@extend %left-wide;
+	background: {
+		image: url(../images/pattern.png);
+		color: $blue;
+	}
+	color: $white;
+	padding: 150px 0 80px;
+
+	p{
+		margin: 0;
+	}
+
+	ul,ol{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.widget{
+		float: left;
+
+		.widget-title{
+			@extend %left-wide;
+			font-size: 17px;
+			text-transform: uppercase;
+			margin-bottom: 35px;
+		}
+
+		.widget-content{
+			@extend %left-wide;
+		}
+
+		// Our Mission widget
+		&.our-mission{
+			.mission-title{
+				@extend %left-wide;
+				font-size: 32px;
+				text-transform: uppercase;
+				font-weight: 900;
+				margin-bottom: 15px;
+			}
+
+			p{
+				margin-bottom: 15px;
+			}
+		}
+
+		// Quick links
+		&.quick-links{
+			ul{
+				li{
+					@extend %left-wide;
+					margin-bottom: 10px;
+					a{
+						@extend %left-wide;
+						color: $white;
+
+						i{
+							margin-right: 10px;
+						}
+
+						&:hover, &:focus{
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+
+		// Gallery
+		&.gallery{
+			ul.gallery-images{
+				margin-left: -4px;
+				margin-right: -4px;
+				li{
+					display: inline-block;
+					margin: 0 4px 10px;
+					a{
+						img{}
+					}
+				}
+			}
+		}
+
+		// Contact Us
+		&.contact-us{
+
+			.contact-chip{
+				@extend %left-wide;
+				position: relative;
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				border-bottom: 2px dotted #384c59;
+
+				&:last-child{
+				 	border: 0;
+				 	padding: 0;
+				 	margin: 0;
+				}
+
+				.icon{
+					position: absolute;
+					img{}
+				}
+				.data{
+					@extend %left-wide;
+					padding-left: 37px;
+					.title{
+						@extend %left-wide;
+						color: $red;
+						font-weight: 700;
+						margin-bottom: 5px;
+					}
+					p{
+						@extend %left-wide;
+						a{
+							@extend %left-wide;
+							color: $white;
+
+							&:hover, &:focus{
+								color: $red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	// Copyrights
+	.copyrights{
+		@extend %left-wide;
+		text-align: center;
+		padding-top: 80px;
+	}
+}
+
+/*=====  End of Footer  ======*/

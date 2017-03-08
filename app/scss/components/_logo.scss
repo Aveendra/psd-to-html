@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*============================
+=            Logo            =
+============================*/
+
+.am-logo{
+	@include size(em(197px), em(69px));
+	float: left;
+	text-indent: -9999px;
+	color: $brand-primary !important;
+	background: {
+		image: url(../images/logo.png);
+		repeat: no-repeat;
+		position: left top;
+		size: contain;
+	}
+	//position: absolute;
+	max-width: 40%;
+	z-index: 90;
+
+	@media screen and (max-width: 991px) {
+		@include size(em(240px), em(210px));
+	}
+
+	@media screen and (max-width: 767px) {
+		@include size(em(240px), em(120px));
+	}
+
+	@media screen and (max-width: 480px) {
+		max-width: 100%;
+	}
+
+	@media screen and (max-width: 375px) {
+		max-width: 50%;
+	}
+
+	@media screen and (max-width: 320px) {
+		max-width: 40%;
+	}
+}
+
+/*=====  End of Logo  ======*/

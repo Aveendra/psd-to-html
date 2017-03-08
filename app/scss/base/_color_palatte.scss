@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+// -------------------------
+
+$black 			: #000000;
+$white 			: #FFFFFF;
+$leaf-green		: #6db146;
+$gray			: #3b3c3d;
+$gray-light		: #696a68;
+$gray-dark		: #282828;
+$red			: #f13e4b;
+$blue			: #091b27;
+
+// Text colors classes
+// -------------------------
+
+.black 				{ color: $black; }
+.white 				{ color: $white; }
+.green 				{ color: $leaf-green; }
+.gray 				{ color: $gray; }
+.gray-light 		{ color: $gray-light; }
+.gray-dark 			{ color: $gray-dark; }
+.red 				{ color: $red; }
+.blue 				{ color: $blue; }
+
+
+// Background colors classes
+// -------------------------
+
+.black-bg 			{ background-color: $black; }
+.white-bg 			{ background-color: $white; }
+.green-bg 			{ background-color: $leaf-green; }
+.gray-bg 			{ background-color: $gray; }
+.gray-light-bg 		{ background-color: $gray-light; }
+.gray-dark-bg 		{ background-color: $gray-dark; }
+.red-bg 			{ background-color: $red; }
+.blue-bg 			{ background-color: $blue; }

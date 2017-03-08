@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*=====================================
+=            Section block            =
+=====================================*/
+
+.dual-section-block{
+	@extend %left-wide;
+	height: 544px;
+	background: {
+		image: url(../images/pattern.png);
+		color: $red;
+	}
+
+	.image-block{
+		height: inherit;
+		float: left;
+		width: 50%;
+		background: {
+			position: right;
+			size: cover;
+		}
+
+		@media screen and (max-width: 480px) {
+			display: none;
+		}
+
+	}
+
+	.container{
+		color: $white;
+		height: inherit;
+		.col{
+			position: relative;
+			height: inherit;
+			padding-left: 60px;
+			.content{
+				@extend %vertical-center;
+				position: absolute;
+			}
+			.title{
+				@extend %left-wide;
+				font-size: 40px;
+				font-weight: 900;
+				text-transform: uppercase;
+				line-height: 1.2;
+				margin-bottom: 30px;
+			}
+			p{
+				@extend %left-wide;
+				margin-bottom: 30px;
+				font-size: 17px;
+			}
+			.btn{
+				font-weight: 900;
+				font-size: 17px;
+				min-height: 47px;
+				min-width: 180px;
+			}
+		}
+	}
+}
+
+/*=====  End of Section block  ======*/

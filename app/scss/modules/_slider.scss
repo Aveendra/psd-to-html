@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/*======================================
+=            Slider wrapper            =
+======================================*/
+
+$slider-height : 623px;
+
+.slider-wrapper{
+	@extend %left-wide;
+	background: $gray;
+	height: $slider-height;
+	background: {
+		image: url(../images/pattern.png);
+		color: $red;
+	}
+
+	@media screen and (max-width: 375px) {
+		height: 300px;
+	}
+}
+
+/*=====  End of Slider wrapper  ======*/
+
+
+/*==============================
+=            Slider            =
+==============================*/
+
+$slider-inner-height : 100%;
+
+.slider{
+	@extend %left-wide;
+	height: 100%;
+	
+
+	// Slides
+	.slides{
+		@extend %left-wide;
+		height: $slider-inner-height;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		// Slide
+		.slide{
+			@extend %left-wide;
+			height: $slider-inner-height;
+			color: $white;
+			background: {
+				size: cover;
+				position: top center;
+				repeat: no-repeat;
+			}
+			position: relative;
+
+			.image-block{
+				height: inherit;
+				float: right;
+				width: 60%;
+				background: {
+					position: left;
+					size: cover;
+				}
+			}
+
+			.container{
+				color: $white;
+				height: inherit;
+				position: relative;
+				.col{
+					position: absolute;
+					height: inherit;
+					width: 60%;
+					.content{
+						@extend %vertical-center;
+						position: absolute;
+					}
+					.title{
+						@extend %left-wide;
+						font-size: 69px;
+						font-weight: 900;
+						text-transform: uppercase;
+						line-height: 1.2;
+						margin-bottom: 30px;
+
+						span{
+							@extend %left-wide;
+						}
+
+						.lite{
+							font-weight: 400;
+							font-size: 54px;
+						}
+
+						@media screen and (max-width: 1024px) {
+							font-size: 50px;
+							.lite{
+								font-size: 50px;
+							}
+						}
+
+						@media screen and (max-width: 480px) {
+							font-size: 25px;
+							.lite{
+								font-size: 30px;
+							}
+						}
+					}
+					p{
+						@extend %left-wide;
+						margin-bottom: 40px;
+						font-size: 17px;
+						width: 60%;
+					}
+					.btn{
+						font-weight: 900;
+						font-size: 17px;
+						min-height: 47px;
+						min-width: 180px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Slider  ======*/
+	

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+//======================================================
+//           Overriding bootstrap variables            =
+//======================================================
+
+$am-brand-primary :		   $red !default;
+$am-brand-disabled:        #c1ced8 !default;
+$am-brand-success:         $leaf-green !default;
+$am-brand-info:            #5bc0de !default;
+$am-brand-warning:         #f0ad4e !default;
+$am-brand-danger:          #d9534f !default;
+
+//=====  End of Overriding bootstrap variables  ======
+
+
+//=======================================
+//            Responsive sizes           
+//=======================================
+
+$small-desktop : 1024px;
+$tablet : 769px;
+$big-mobile : 680px;
+$big-mobile-horizontal : 680px;
+$small-mobile : 375px;
+$small-mobile-horizontal : 480px;
+
+//=====  End of Responsive sizes  =======
+
+
+//==============================
+//=            Body            =
+//==============================
+
+$am-body-bg : $white;
+$am-label-color : #627584;
+
+$am-text-color : $black;
+
+//=====  End of Body  ========
+
+
+//================================
+//=            Header            =
+//================================
+
+$header-bg-color : $white;
+$header-height : 60px;
+$header-profile-name-color : #627584;
+
+//======  End of Header  ======
+
+
+/*=============================
+=            Links            =
+=============================*/
+
+$hover-color : $red;
+
+/*=====  End of Links  ======*/
+

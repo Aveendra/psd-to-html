@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*====================================
+=            Body Wrapper            =
+====================================*/
+
+.am-body-wrapper{
+	@media screen and (min-width: 2000px) {
+		width: 2000px;
+		margin: auto;
+		@include prefix(box-shadow,0 5px 20px #b1b7c5, moz webkit ms o);
+    	overflow: hidden;
+	}
+}
+
+/*=====  End of Body Wrapper  ======*/

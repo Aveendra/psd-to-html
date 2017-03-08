@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*=======================================
+=            Face Block            =
+=======================================*/
+
+.face-block{
+	text-align: center;
+
+	.img{}
+
+	.title{
+		font-weight: 900;
+		font-size: 26px;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		color: $red;
+	}
+
+	.description{
+		color: $black;
+		font-weight: 900;
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+}
+
+/*=====  End of Face Block  ======*/

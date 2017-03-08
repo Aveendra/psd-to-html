@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*===================================
+=            Our testimonials       =
+===================================*/
+
+.testimonials-block{
+	@extend %left-wide;
+	padding: 60px 0 50px;
+	background: {
+		color: #716f6e;
+		image: url(../images/testimonial-bg-img.png);
+	}
+	color: $white;
+	text-align: center;
+}
+
+/*=====  End of Our testimonials ==*/
+
+
+/*====================================
+=            Testimonials            =
+====================================*/
+
+.testimonials{
+	display: inline-block;
+	list-style: none;
+	width: 1000px;
+	max-width: 100%;
+	padding: 0;
+	margin: 0 auto;
+
+	li{
+		@extend %left-wide;
+		position: relative;
+
+		.testimonial-block{
+			float: left;
+			background: $white;
+			@include border-radius(20px);
+			padding: 30px 30px 40px;
+
+			p{
+				@extend %left-wide;
+				color: #8b8b8b;
+				text-align: left;
+				padding-left: 60px;
+				margin-bottom: 20px;
+				position: relative;
+
+				&:before{
+					left: 0;
+					top: -10px;
+					position: absolute;
+					content: "“";
+					font-size: 120px;
+					line-height: 1;
+					color: $red;
+				}
+			}
+
+			.said-who{
+				@extend %left-wide;
+				font-size: 24px;
+				font-weight: 900;
+				color: $red;
+			}
+		}
+	}
+}
+
+/*=====  End of Testimonials  ======*/
+
+
+/*================================================
+=            Testimonials Controllers            =
+================================================*/
+
+.controllers{
+	@extend %left-wide;
+	list-style: none;
+	padding: 0;
+	margin: -6px 0 0;
+
+	li{
+		display: inline-block;
+		padding: 0;
+		cursor: pointer;
+		position: relative;
+		padding-top: 40px;
+
+		&.active{
+			&:before{
+				content: "";
+				background: {
+					image: url(../images/testi-arrow.png);
+					position: top center;
+					repeat: no-repeat;
+				}
+				height: 15px;
+				width: 30px;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -1px;
+				margin: auto;
+			}
+		}
+	}
+}
+
+/*=====  End of Testimonials Controllers  ======*/

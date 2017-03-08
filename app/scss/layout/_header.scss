@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/*==============================
+=            Header            =
+==============================*/
+
+.am-header{
+	@extend %left-wide;
+}
+
+/*=====  End of Header  ======*/
+
+
+/*=================================
+=            Top Layer            =
+=================================*/
+
+.top-layer{
+	$top-layer-height 	: 41px;
+	$top-layer-bg		: $gray;
+
+	@extend %left-wide;
+	min-height: $top-layer-height;
+	background: {
+		color: $top-layer-bg;
+		image: url(../images/pattern.png);
+	}
+	color: $white;
+
+	// Layer data
+	.layer-data{
+		list-style: none;
+		float: right;
+		margin: 0 -15px;
+		padding: 0;
+		font-size: 13px;
+		font-weight: 500;
+
+
+		.social-links{
+			padding: 0;
+			margin: 0;
+
+			li{
+				display: inline;
+				padding: 0 5px;
+				a{
+					color: $white;
+					padding: 0 5px;
+					line-height: $top-layer-height;
+
+					&:hover,
+					&:focus{
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Top Layer  ======*/
+
+
+/*====================================
+=            Bottom Layer            =
+====================================*/
+
+.bottom-layer{
+	$bottom-layer-height 	: 92px;
+
+	@extend %left-wide;
+
+	@media screen and (max-width: 767px) {
+		padding: 10px 0;
+	}
+
+	.navbar{
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		.navbar-nav{
+			margin: 0 -30px;
+			> li{
+				padding: 0 20px;
+				> a{
+					color: $black;
+					font-weight: 500;
+					padding: 36px 5px 36px;
+					background: transparent;
+					font-size: 18px;
+
+					&:hover{
+						color: $hover-color;
+					}
+				}
+
+				&.active{
+					a{
+						color: $hover-color;
+					}
+				}
+
+			}
+			.dropdown-menu{
+				border: none;
+				padding: 10px 0;
+				li{
+					padding: 0 15px;
+				}
+				a{
+					border-radius: 3px;
+					&:hover{
+						background: $hover-color;
+						color: $white;
+					}
+				}
+			}
+		}
+
+		.navbar-brand{
+			height: $bottom-layer-height;
+			line-height: $bottom-layer-height;
+			padding: 8px 15px;
+			@media screen and (max-width: 768px) {
+				width: 180px;
+				padding: 15px 15px;
+			}
+		}
+
+		@media screen and (max-width: 991px) {
+			.navbar-nav{
+				margin: 0 -15px;
+				> li{
+					padding: 0 15px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			.navbar-nav{
+				margin: 0 0;
+				> li{
+					padding: 0 0;
+					> a{
+						padding: 20px 15px 15px;
+					}
+
+					&.active{
+						a{
+							border-color: $hover-color;
+							background: $hover-color;
+							color: $white;
+						}
+					}
+				}
+			}
+
+			.navbar-collapse{
+				position: absolute;
+			    left: 15px;
+		        right: 15px;
+			    z-index: 90;
+			    background: $white;
+			    margin-top: 8px;
+			    box-shadow: 0 15px 35px -20px #000;
+			}
+		}
+
+		.navbar-toggle{
+			border-color: $hover-color;
+			margin-top: 28px;
+			span{
+				background: $hover-color;
+			}
+		}
+	}
+}
+
+/*=====  End of Bottom Layer  ======*/

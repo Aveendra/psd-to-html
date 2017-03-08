@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*======================================
+=            Subscribe Form            =
+======================================*/
+
+.subscribe{
+	@extend %left-wide;
+	margin-top: -200px;
+	background: {
+		color: $red;
+		image: url(../images/pattern.png);
+	}
+	padding: 30px;
+
+	.contact-number{
+		float: left;
+		.icon{
+			float: left;
+			margin-right: 15px;
+		}
+		p{
+			float: left;
+			margin-right: 15px;
+			font-size: 17px;
+			text-transform: uppercase;
+			line-height: 1.2;
+		}
+		a{
+			float: left;
+			color: $white;
+			font-weight: 900;
+			font-size: 42px;
+			line-height: 1;
+			@media screen and (max-width: 1024px) {
+				font-size: 30px;
+				margin-top: 5px;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	.subscribe-form{
+		float: right;
+		.input{
+			float: left;
+			position: relative;
+			margin-right: 15px;
+			min-width: 315px;
+			.fa{
+				position: absolute;
+				color: #b4b4b4;
+				top: 13px;
+				left: 15px;
+			}
+			.form-control{
+				min-height: 41px;
+				border: 0;
+				box-shadow: none;
+				padding-left: 40px;
+				@include border-radius(22px);
+			}
+
+			@media screen and (max-width: 1024px) {
+				min-width: 250px;
+			}
+
+			@media screen and (max-width: 480px) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+/*=====  End of Subscribe Form  ======*/

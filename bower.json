@@ -1,0 +1,22 @@
+{
+  "name": "aveendra-thilakarathna",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git"
+  },
+  "install": {
+    "path": "app/lib",
+    "sources": {
+      "jquery": [
+        "bower_components/jquery/dist/*.min.*"
+      ],
+      "bootstrap": [
+        "bower_components/bootstrap/dist/**"
+      ],
+      "font-awesome": [
+        "bower_components/font-awesome/**"
+      ]
+    }
+  }
+}

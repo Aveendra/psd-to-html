@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*=====================================
+=            Section block            =
+=====================================*/
+
+.section-block{
+	@extend %left-wide;
+	padding: 80px 0;
+}
+
+/*=====  End of Section block  ======*/

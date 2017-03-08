@@ -1,0 +1,122 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix;
+}
+.center-block {
+  @include center-block;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  @include text-hide;
+}
+
+.strong, .bold{
+  font-weight: 500;
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
+
+// Elipsis (Truncate text)
+// -------------------------
+
+.elipsis, .ellipsis{
+  @include ellipsis();
+}
+
+
+// Strikethrough / Overline
+// -------------------------
+
+.line-through,
+.strike-through,
+.overline{
+  text-decoration: line-through;
+}
+
+tr.strike-through {
+  text-decoration: none;
+  td{
+    *{
+      color: #c1d0dc;
+      cursor: default;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      border-bottom: 1px solid #d7dfe4;
+      width: 100%;
+    }
+  }
+}
+
+
+
+// Width & Height
+// -------------------------
+
+.width-full{width: 100%;}
+.width-half{width: 50%;}
+
+.height-full{height: 100%;}
+.height-half{height: 50%;}
+
+
+// Separator
+// -------------------------
+
+.separator{
+  float: left;
+  width: 90%;
+  max-width: 895px;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  @include prefix(transform, translateX(-50%), 'webkit' 'moz' 'ms');
+  height: 1px;
+  background: #eef1f7;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*=======================================
+=            Thumbnail Block            =
+=======================================*/
+
+.thumbnail-block{
+	text-align: center;
+
+	.title{
+		font-weight: 900;
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+
+	.description{
+		color: #7a7a7a;
+	}
+}
+
+/*=====  End of Thumbnail Block  ======*/
