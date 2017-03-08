@@ -5,6 +5,7 @@
 
 Please follow the steps.
 
-1. Run `npm install`
-2. Run `bower install`
-3. Run `gulp`
+1. Clone or Download the project.
+2. Run `npm install`
+3. Run `bower install`
+4. Run `gulp`
